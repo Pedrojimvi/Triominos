@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:id="@+id/linLay8"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="4dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtJug"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:textSize="34sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/txtRob"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/robar"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:clickable="false"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdBtn0"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:minHeight="48dp"
+                android:text="@string/no_roba" />
+
+            <RadioButton
+                android:id="@+id/rdBtn1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/roba_1" />
+
+            <RadioButton
+                android:id="@+id/rdBtn2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:minHeight="48dp"
+                android:text="@string/roba_2" />
+
+            <RadioButton
+                android:id="@+id/rdBtn3_si"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/roba_3_si"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <RadioButton
+                android:id="@+id/rdBtn3_no"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/roba_3_no"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/txtFic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/num_ficha"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linLay13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:orientation="horizontal">
+
+            <Spinner
+                android:id="@+id/spnP4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/num"
+                android:minHeight="48dp"
+                tools:ignore="DuplicateSpeakableTextCheck" />
+
+            <Spinner
+                android:id="@+id/spnP5"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/num"
+                android:minHeight="48dp" />
+
+            <Spinner
+                android:id="@+id/spnP6"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:entries="@array/num"
+                android:minHeight="48dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtBon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/bonus"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/linLay5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/linLay7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgPue"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/pue"
+                    app:srcCompat="@drawable/puente"
+                    tools:ignore="ImageContrastCheck" />
+
+                <ImageView
+                    android:id="@+id/imgHex"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/hexag"
+                    app:srcCompat="@drawable/hexagono" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLay11"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtPue"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/pue"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtHex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/hexag"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLay9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/imgDHex"
+                    android:layout_width="160dp"
+                    android:layout_height="100dp"
+                    android:contentDescription="@string/dobhex"
+                    app:srcCompat="@drawable/doble_hexagono" />
+
+
+                <ImageView
+                    android:id="@+id/imgTHex"
+                    android:layout_width="160dp"
+                    android:layout_height="150dp"
+                    android:contentDescription="@string/trihex"
+                    app:srcCompat="@drawable/triple_hexagono" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/linLay10"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txtDHex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/doble_hex"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txtTHex"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/triple_hex"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <RadioGroup
+            android:id="@+id/rdbGrpBon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rdBtnNad"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:checked="true"
+                android:text="@string/nada" />
+
+            <RadioButton
+                android:id="@+id/rdBtnPue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/pue" />
+
+            <RadioButton
+                android:id="@+id/rdBtnHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/hexag" />
+
+            <RadioButton
+                android:id="@+id/rdBtnDobHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/doble_hexagono" />
+
+            <RadioButton
+                android:id="@+id/rdBtnTriHex"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/triple_hexagono" />
+
+        </RadioGroup>
+
+        <LinearLayout
+            android:id="@+id/linLay12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnAct"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/actualizar"
+                android:layout_marginEnd="5dp"/>
+
+            <Button
+                android:id="@+id/btnFin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/finalizar"
+                android:layout_marginStart="5dp"/>
+        </LinearLayout>
+
+        <TableLayout
+            android:id="@+id/tblLay3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal">
+
+            <TableRow
+                android:id="@+id/tblRow3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/txtJug_3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/txtPun3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </TableRow>
+
+        </TableLayout>
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
